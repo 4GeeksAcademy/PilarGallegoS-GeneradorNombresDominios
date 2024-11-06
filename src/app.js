@@ -12,7 +12,7 @@ window.onload = function() {
   let noun = ["jogger", "racoon"];
 
   let domains = pronoun.flatMap(p =>
-    adj.flatMap(a => noun.map(n => p + a + n))
+    adj.flatMap(a => noun.map(n => p + a + n + ".es"))
   );
   console.log(domains);
 };
